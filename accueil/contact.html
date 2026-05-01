@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Admissions - Département Informatique EFREI</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,12 +25,17 @@
                 <li><a href="formations.html">Formations</a></li>
                 <li><a href="equipe.html">Équipe & Recherche</a></li>
                 <li><a href="campus.html">Vie étudiante</a></li>
-                <li><a href="projets.html">Projets</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="projets.html">Projets étudiants</a></li>
                 <li><a href="professionnalisation.html">Professionnalisation</a></li>
                 <li><a href="contact.html">Contact & Admissions</a></li>
                 <li><a href="apropos.html">À propos</a></li>
             </ul>
         </nav>
+
+        <button id="darkModeBtn" type="button" class="dark-toggle">
+            🌙 Mode sombre
+        </button>
     </div>
 </header>
 
@@ -150,58 +157,59 @@
     </section>
 
     <section>
-        <h2>FAQ</h2>
+    <h2>FAQ</h2>
 
-        <div class="cards">
-            <div class="card">
-                <h3>Comment candidater après le bac ?</h3>
-                <p>
-                    Pour le Programme Grande École post-bac, la candidature passe par Parcoursup
-                    via le Concours Puissance Alpha.
-                </p>
-            </div>
+    <div class="faq">
 
-            <div class="card">
-                <h3>Existe-t-il des admissions parallèles ?</h3>
-                <p>
-                    Oui. L’EFREI propose des admissions parallèles pour plusieurs niveaux,
-                    notamment en B1, B2, B3 et M1 selon les programmes.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Comment trouver un stage ou une alternance ?</h3>
-                <p>
-                    Les étudiants peuvent être accompagnés par le Career Center,
-                    que l’EFREI met en avant pour les stages et l’alternance.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Les frais de scolarité peuvent-ils être échelonnés ?</h3>
-                <p>
-                    Oui. Plusieurs pages programmes EFREI indiquent un règlement possible en 2, 4
-                    ou 10 fois selon la formation.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Le campus est-il bien desservi ?</h3>
-                <p>
-                    Oui. Le campus de Villejuif est desservi par les lignes 7 et 15
-                    à Villejuif–Louis Aragon, et la ligne 14 à Villejuif–Gustave Roussy.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Le campus est-il proche de Paris ?</h3>
-                <p>
-                    L’EFREI indique que le campus Paris est situé à environ 15 minutes en métro
-                    du centre de Paris.
-                </p>
-            </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Comment candidater après le bac ?</h3>
+            <p class="faq-answer">
+                Vous pouvez candidater via Parcoursup en sélectionnant le Programme Grande École de l’EFREI
+                dans le cadre du Concours Puissance Alpha.
+            </p>
         </div>
-    </section>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Proposez-vous des admissions parallèles ?</h3>
+            <p class="faq-answer">
+                Oui, nous proposons des admissions parallèles à plusieurs niveaux (B1, B2, B3 et M1).
+                La candidature se fait directement via notre site avec étude de dossier et, si nécessaire, un entretien.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Peut-on faire une alternance ?</h3>
+            <p class="faq-answer">
+                Oui, plusieurs formations sont accessibles en alternance. Nous accompagnons nos étudiants
+                dans leur recherche d’entreprise grâce à notre réseau de partenaires et notre Career Center.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Comment trouver un stage ?</h3>
+            <p class="faq-answer">
+                Nous mettons à disposition des offres de stages et accompagnons chaque étudiant
+                dans sa recherche via des ateliers, du coaching et un réseau de plus de 2000 entreprises partenaires.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Le campus est-il accessible en transports ?</h3>
+            <p class="faq-answer">
+                Oui, notre campus de Villejuif est desservi par la ligne 7 et la ligne 15 (Villejuif – Louis Aragon)
+                ainsi que la ligne 14 (Villejuif – Gustave Roussy).
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Le campus est-il proche de Paris ?</h3>
+            <p class="faq-answer">
+                Oui, le campus est situé à environ 15 minutes en métro du centre de Paris.
+            </p>
+        </div>
+
+    </div>
+</section>
 
     <section class="page-banner">
         <h2>Plan d’accès</h2>
@@ -212,6 +220,7 @@
 
     <section>
         <h2>Venir au campus</h2>
+
         <div class="cards">
             <div class="card">
                 <h3>Métro ligne 7</h3>
@@ -233,14 +242,22 @@
                 <p>Environ 15 minutes en métro depuis le centre de Paris</p>
             </div>
         </div>
+    </section>
 
-        <section>
-    <h2>Plan d'accès</h2>
-    <img src="carte-campus.png" alt="Plan d'accès campus EFREI Villejuif" class="hero-img">
-</section>
-
-            
-        </section>
+    <section>
+        <h2>Carte interactive du campus</h2>
+        
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps?q=EFREI%20Paris%20Villejuif%2030-32%20Avenue%20de%20la%20R%C3%A9publique%2094800%20Villejuif&output=embed"
+                width="100%"
+                height="420"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </section>
 
 </main>
@@ -252,7 +269,17 @@
         <a href="apropos.html">À propos</a>
         <a href="contact.html">Contact</a>
     </div>
+
+    <!-- ENCADRÉ LABELS -->
+    <div class="labels-box">
+        <img src="images/cge.png" alt="Label CGE">
+        <img src="images/cti.png" alt="Label CTI">
+        <img src="images/eespig.png" alt="Label EESPIG">
+    </div>
 </footer>
 
+<button id="backToTop" title="Retour en haut">↑</button>
+
+
 </body>
-</html>
+</html> 

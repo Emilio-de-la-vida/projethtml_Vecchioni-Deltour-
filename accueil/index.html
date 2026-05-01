@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Département Informatique EFREI</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,28 +22,44 @@
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="formations.html">Cours et formations</a></li>
-                <li><a href="equipe.html">Équipe enseignante</a></li>
-                <li><a href="evenements.html">Événements EFREI</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="equipe.html">Équipe & Recherche</a></li>
+                <li><a href="campus.html">Vie étudiante</a></li>
+                <li><a href="evenements.html">Événements</a></li>
                 <li><a href="projets.html">Projets étudiants</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="professionnalisation.html">Professionnalisation</a></li>
+                <li><a href="contact.html">Contact & Admissions</a></li>
                 <li><a href="apropos.html">À propos</a></li>
             </ul>
         </nav>
+
+        <button id="darkModeBtn" type="button" class="dark-toggle">
+            🌙 Mode sombre
+        </button>
     </div>
 </header>
 
 <main>
 
-    <section class="hero">
+   <section class="hero hero-diagonal">
+    <div class="hero-content">
         <h2>À l’EFREI, chaque idée devient code, chaque projet devient avenir</h2>
         <p>
             Bienvenue sur le site du département Informatique de l’EFREI.
             Découvrez un univers où l’innovation, la créativité et la pratique
             se rejoignent pour former les talents du numérique de demain.
         </p>
+
+
         <a href="formations.html" class="btn">Découvrir les formations</a>
-    </section>
+    </div>
+
+   <div class="hero-visual">
+    <img src="images/111.png" alt="Étudiants en projet informatique" class="hero-slide active">
+    <img src="images/acc.png" alt="Étudiants travaillant en équipe" class="hero-slide">
+    <img src="images/image.png" alt="Ambiance tech et innovation" class="hero-slide">
+</div>
+</section>
 
     <section>
         <h2>Un département tourné vers l’action</h2>
@@ -57,7 +75,7 @@
     </section>
 
     <section>
-        <h2>Visuels du département</h2>
+        <h2>Une pédagogie tournée vers l’action</h2>
         <div class="cards">
             <div class="card">
                 <img src="images/accueil1.jpg" alt="Poste de travail étudiant avec code et croquis">
@@ -79,30 +97,42 @@
         </div>
     </section>
 
-    <section>
-        <h2>Chiffres clés</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>98%</h3>
-                <p>des ingénieurs diplômés étaient en activité 6 mois après la fin de leurs études</p>
-            </div>
+   <section>
+    <h2>Chiffres clés</h2>
 
-            <div class="card">
-                <h3>+2000</h3>
-                <p>entreprises dans le réseau EFREI pour les stages, alternances et partenariats</p>
-            </div>
-
-            <div class="card">
-                <h3>1936</h3>
-                <p>année de création de l’EFREI, école historique du numérique</p>
-            </div>
-
-            <div class="card">
-                <h3>Campus</h3>
-                <p>Villejuif accueille une grande partie des événements, rencontres et temps forts étudiants</p>
-            </div>
+    <div class="cards">
+        <div class="card stat-card">
+            <h3><span class="counter" data-target="1">0</span>ère</h3>
+            <p>école d’ingénieurs privée en informatique selon L’Étudiant 2026</p>
         </div>
-    </section>
+
+        <div class="card stat-card">
+            <h3><span class="counter" data-target="1">0</span>ère</h3>
+            <p>école privée d’intérêt général, label EESPIG</p>
+        </div>
+
+        <div class="card stat-card">
+            <h3><span class="counter" data-target="2">0</span>ème</h3>
+            <p>école privée au classement général de L’Étudiant 2026</p>
+        </div>
+
+        <div class="card stat-card">
+            <h3><span class="counter" data-target="98">0</span>%</h3>
+            <p>des ingénieurs diplômés en activité 6 mois après la fin de leurs études</p>
+        </div>
+
+        <div class="card stat-card">
+            <h3>+<span class="counter" data-target="2000">0</span></h3>
+            <p>entreprises partenaires pour les stages, alternances et opportunités professionnelles</p>
+        </div>
+
+        <div class="card stat-card">
+    <h3><span class="counter" data-target="42">0</span>K€</h3>
+    <p>salaire médian à la sortie</p>
+</div>
+    </div>
+
+</section>
 
     <section>
         <h2>Actualités & événements à venir</h2>
@@ -191,7 +221,47 @@
         <a href="apropos.html">À propos</a>
         <a href="contact.html">Contact</a>
     </div>
+
+    <!-- ENCADRÉ LABELS -->
+    <div class="labels-box">
+        <img src="images/cge.png" alt="Label CGE">
+        <img src="images/cti.png" alt="Label CTI">
+        <img src="images/eespig.png" alt="Label EESPIG">
+    </div>
 </footer>
 
+<div id="cookieModal" class="cookie-modal">
+    <div class="cookie-box">
+        <button id="continueWithoutCookies" type="button" class="cookie-link">
+            Continuer sans accepter →
+        </button>
+
+        <h3>Département Informatique EFREI</h3>
+
+        <h4>Les cookies améliorent votre expérience</h4>
+
+        <p>
+            Lors de votre navigation sur ce site, nous utilisons des cookies pour améliorer
+            l’expérience utilisateur, mémoriser vos préférences comme le mode sombre et mesurer
+            les interactions avec certaines fonctionnalités du site.
+        </p>
+
+        <p>
+            Vous pouvez accepter les cookies ou continuer sans accepter. Votre choix peut être
+            modifié à tout moment en réinitialisant les préférences du navigateur.
+        </p>
+
+        <div class="cookie-actions">
+            <button id="customizeCookies" type="button" class="cookie-btn secondary">
+                Personnaliser les cookies
+            </button>
+
+            <button id="acceptCookies" type="button" class="cookie-btn primary">
+                Tout accepter
+            </button>
+        </div>
+    </div>
+</div>
+<button id="backToTop" title="Retour en haut">↑</button>
 </body>
 </html>

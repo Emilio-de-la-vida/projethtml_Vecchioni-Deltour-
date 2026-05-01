@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formations - Département Informatique EFREI</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,14 +22,20 @@
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="formations.html">Cours et formations</a></li>
-                <li><a href="equipe.html">Équipe enseignante</a></li>
-                <li><a href="evenements.html">Événements EFREI</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="equipe.html">Équipe & Recherche</a></li>
+                <li><a href="campus.html">Vie étudiante</a></li>
+                <li><a href="evenements.html">Événements</a></li>
                 <li><a href="projets.html">Projets étudiants</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="professionnalisation.html">Professionnalisation</a></li>
+                <li><a href="contact.html">Contact & Admissions</a></li>
                 <li><a href="apropos.html">À propos</a></li>
             </ul>
         </nav>
+
+        <button id="darkModeBtn" type="button" class="dark-toggle">
+            🌙 Mode sombre
+        </button>
     </div>
 </header>
 
@@ -358,6 +366,26 @@
         </p>
         <a href="projets.html" class="btn">Découvrir les projets étudiants</a>
     </section>
+    <section>
+    <h2>Quiz d’orientation</h2>
+    <p>
+        Vous hésitez entre plusieurs parcours ? Répondez à cette question pour découvrir
+        la formation qui pourrait le mieux correspondre à votre profil.
+    </p>
+
+    <div class="quiz-box">
+        <h3>Quel domaine vous attire le plus ?</h3>
+
+        <div class="quiz-options">
+            <button type="button" class="quiz-btn" data-result="web">Créer des sites, applications et interfaces</button>
+            <button type="button" class="quiz-btn" data-result="cyber">Protéger les systèmes et les réseaux</button>
+            <button type="button" class="quiz-btn" data-result="data">Analyser les données et travailler avec l’IA</button>
+            <button type="button" class="quiz-btn" data-result="it">Piloter des projets numériques et des systèmes d’information</button>
+        </div>
+
+        <div id="quizResult" class="quiz-result"></div>
+    </div>
+</section>
 
 </main>
 
@@ -368,7 +396,15 @@
         <a href="apropos.html">À propos</a>
         <a href="contact.html">Contact</a>
     </div>
+
+    <!-- ENCADRÉ LABELS -->
+    <div class="labels-box">
+        <img src="images/cge.png" alt="Label CGE">
+        <img src="images/cti.png" alt="Label CTI">
+        <img src="images/eespig.png" alt="Label EESPIG">
+    </div>
 </footer>
+<button id="backToTop" title="Retour en haut">↑</button>
 
 </body>
 </html>

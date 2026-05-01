@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - EFREI</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,7 +14,7 @@
     <div class="header-container">
         <div class="logo-title">
             <a href="index.html">
-                <img src="images/efrei-logo.png" class="logo">
+                <img src="images/efrei-logo.png" alt="Logo EFREI" class="logo">
             </a>
             <h1 class="site-title">Département Informatique EFREI</h1>
         </div>
@@ -21,85 +23,109 @@
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="formations.html">Formations</a></li>
-                <li><a href="equipe.html">Équipe</a></li>
+                <li><a href="equipe.html">Équipe & Recherche</a></li>
                 <li><a href="campus.html">Vie étudiante</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="professionnalisation.html">Carrières</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="projets.html">Projets étudiants</a></li>
+                <li><a href="professionnalisation.html">Professionnalisation</a></li>
+                <li><a href="contact.html">Contact & Admissions</a></li>
                 <li><a href="apropos.html">À propos</a></li>
             </ul>
         </nav>
+
+        <button id="darkModeBtn" type="button" class="dark-toggle">
+            🌙 Mode sombre
+        </button>
     </div>
 </header>
 
 <main>
 
-<section class="hero">
-    <h2>À propos du projet</h2>
-    <p>
-        Ce site a été réalisé dans le cadre d’un projet académique à l’EFREI.
-        Il a pour objectif de présenter le département Informatique à travers
-        ses formations, ses enseignants, ses projets et sa vie étudiante.
-    </p>
-</section>
+    <section class="hero">
+        <h2>À propos du projet</h2>
+        <p>
+            Ce site a été réalisé dans le cadre d’un projet académique à l’EFREI.
+            Il a pour objectif de présenter le département Informatique à travers
+            ses formations, son équipe enseignante, sa vie étudiante, ses projets
+            et ses liens avec le monde professionnel.
+        </p>
+    </section>
 
-<section>
-    <h2>Objectif du site</h2>
-    <p>
-        L’objectif de ce projet est de concevoir un site web moderne et structuré
-        en HTML et CSS, permettant de valoriser les différents aspects du
-        département Informatique de l’EFREI.
-    </p>
-    <p>
-        Ce site met en avant l’organisation des formations, la qualité de l’enseignement,
-        les projets étudiants et les opportunités professionnelles offertes aux étudiants.
-    </p>
-</section>
+    <section>
+        <h2>Objectif du site</h2>
+        <p>
+            L’objectif de ce projet est de concevoir un site vitrine moderne, structuré
+            et responsive, développé en HTML, CSS et JavaScript, afin de valoriser
+            le département Informatique de l’EFREI.
+        </p>
+        <p>
+            Le site propose une navigation claire entre les différentes pages, un contenu
+            organisé par thématiques, des éléments visuels, des tableaux, une carte
+            interactive, une FAQ, ainsi que plusieurs fonctionnalités dynamiques comme
+            le mode sombre et le bouton de retour en haut.
+        </p>
+    </section>
 
-<section>
-    <h2>Notre équipe</h2>
+    <section>
+        <h2>Notre équipe</h2>
 
-    <div class="cards">
+        <div class="cards">
 
-        <div class="card">
-            <h3>Emile Vecchioni</h3>
-            <p><strong>Rôle :</strong> Développement</p>
-            <p>
-                Conception technique du site, structure HTML et mise en place des fonctionnalités.
-            </p>
+            <div class="card">
+                <h3>Emile Vecchioni</h3>
+                <p><strong>Rôle :</strong> Développement & JavaScript</p>
+                <p>
+                    Conception technique du site, structure HTML, intégration des pages
+                    et mise en place des fonctionnalités interactives en JavaScript :
+                    mode sombre, FAQ interactive, carte intégrée, animations et retour en haut.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Thomas Deltour</h3>
+                <p><strong>Rôle :</strong> Design & intégration</p>
+                <p>
+                    Création de l’interface, choix des couleurs, mise en forme CSS,
+                    organisation visuelle des sections et amélioration de l’expérience utilisateur.
+                </p>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Thomas Deltour</h3>
-            <p><strong>Rôle :</strong> Design & intégration</p>
-            <p>
-                Création de l’interface, choix des couleurs, mise en forme CSS et expérience utilisateur.
-            </p>
+    <section>
+        <h2>Technologies utilisées</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Structure des pages, organisation du contenu et navigation entre les sections.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Design, mise en page, responsive design, cartes, boutons et identité visuelle.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>
+                    Ajout d’interactivité : mode sombre mémorisé, FAQ interactive,
+                    carrousel, filtres de projets et bouton retour en haut.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>VS Code</h3>
+                <p>Environnement de développement utilisé pour créer, organiser et tester le site.</p>
+            </div>
+
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>Hébergement du dépôt du projet, suivi des versions et partage du code source.</p>
+            </div>
         </div>
-
-    </div>
-</section>
-
-<section>
-    <h2>Technologies utilisées</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>HTML</h3>
-            <p>Structure des pages et organisation du contenu.</p>
-        </div>
-
-        <div class="card">
-            <h3>CSS</h3>
-            <p>Design, mise en page, animations et responsive design.</p>
-        </div>
-
-        <div class="card">
-            <h3>VS Code</h3>
-            <p>Environnement de développement utilisé pour le projet.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
 </main>
 
@@ -107,9 +133,19 @@
     <div class="footer-container">
         <p>© 2026 - Département Informatique EFREI</p>
         <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
         <a href="contact.html">Contact</a>
     </div>
+
+    <!-- ENCADRÉ LABELS -->
+    <div class="labels-box">
+        <img src="images/cge.png" alt="Label CGE">
+        <img src="images/cti.png" alt="Label CTI">
+        <img src="images/eespig.png" alt="Label EESPIG">
+    </div>
 </footer>
+
+<button id="backToTop" title="Retour en haut">↑</button>
 
 </body>
 </html>
